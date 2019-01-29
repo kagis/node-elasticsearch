@@ -1,6 +1,6 @@
 # node-elasticsearch
 
-Lightweight Elasticsearch client for Node.j
+Lightweight Elasticsearch client for Node.js
 
 ## Features
 
