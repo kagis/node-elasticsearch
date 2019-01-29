@@ -1,0 +1,24 @@
+{
+  "name": "@kagis/elasticsearch",
+  "version": "0.1.0",
+  "description": "Lightweight Elasticsearch client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagis/elasticsearch.git"
+  },
+  "keywords": [
+    "elasticsearch",
+    "elasticsearchjs"
+  ],
+  "author": "exe-dealer@ya.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kagis/elasticsearch/issues"
+  },
+  "homepage": "https://github.com/kagis/elasticsearch#readme",
+  "dependencies": {}
+}
