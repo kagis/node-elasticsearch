@@ -94,6 +94,8 @@ async function elasticsearch({
         throw err;
       }
     }
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
   }
 };
 
