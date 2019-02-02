@@ -73,7 +73,15 @@ async function elasticsearch({
 
       if (res.statusCode >= 300) {
         throw Object.assign(new Error(), {
-          name: 'ElasticSearchError',
+          name: 'ElasticsearchError',
+          code: 'ELASTICSEARCH_ERROR',
+          http_status: res.statusCode,
+          elasticsearch_status: (
+            res_content &&
+            res_content.error &&
+            res_content.error.type ||
+            null
+          ),
           response: res_content,
           [k_can_retry]: res.statusCode >= 500,
           message: (
@@ -97,7 +105,7 @@ async function elasticsearch({
 
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
-};
+}
 
 function scroll(es_req) {
   return new ElasticsearchScroll(es_req);
